@@ -1,37 +1,39 @@
-disabled_rules:
-  - compiler_protocol_init
-  - cyclomatic_complexity
-  - file_length
-  - force_cast
-  - function_body_length
-  - function_parameter_count
-  - identifier_name
-  - multiple_closures_with_trailing_closure
-  - notification_center_detachment
-  - line_length
-  - trailing_whitespace
-  - type_body_length
-  - type_name
-  - todo
-
-opt_in_rules:
+only_rules:
   - anyobject_protocol
   - array_init
+  - block_based_kvo
+  - capture_variable
+  - class_delegate_protocol
+  - closing_brace
   - closure_end_indentation
+  - closure_parameter_position
   - closure_spacing
   - collection_alignment
+  - colon
+  - comma
+  - comment_spacing
+  - computed_accessors_order
   - contains_over_filter_count
   - contains_over_filter_is_empty
   - contains_over_first_not_nil
   - contains_over_range_nil_comparison
+  - control_statement
   - convenience_type
-  - discouraged_object_literal
+  - custom_rules
+  - deployment_target
+  - discarded_notification_center_observer
+  - discouraged_assert
+  - discouraged_direct_init
   - discouraged_optional_boolean
+  - duplicate_enum_cases
+  - duplicate_imports
+  - dynamic_inline
   - empty_collection_literal
   - empty_count
+  - empty_enum_arguments
+  - empty_parameters
+  - empty_parentheses_with_trailing_closure
   - empty_string
-  - empty_xctest_method
-  - enum_case_associated_values_count
   - expiring_todo
   - explicit_init
   - fallthrough
@@ -39,39 +41,90 @@ opt_in_rules:
   - file_name_no_space
   - first_where
   - flatmap_over_map_reduce
+  - for_where
+  - force_try
+  - generic_type_name
   - identical_operands
+  - inclusive_language
+  - inert_defer
+  - is_disjoint
   - joined_default_parameter
   - last_where
+  - leading_whitespace
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_hashing
   - legacy_multiple
+  - legacy_nsgeometry_functions
   - legacy_random
   - literal_expression_end_indentation
   - lower_acl_than_parent
-  - missing_docs
+  - mark
+  - multiline_arguments
+  - multiline_function_chains
+  - multiline_literal_brackets
   - multiline_parameters
   - multiline_parameters_brackets
+  - multiple_closures_with_trailing_closure
+  - no_fallthrough_only
+  - no_space_in_method_call
   - nslocalizedstring_key
+  - nsobject_prefer_isequal
+  - opening_brace
   - operator_usage_whitespace
+  - operator_whitespace
   - optional_enum_case_matching
-  - overridden_super_call
-  - override_in_extension
+  - orphaned_doc_comment
   - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
   - prefer_zero_over_explicit_init
-  - private_outlet
+  - private_over_fileprivate
+  - private_unit_test
   - prohibited_super_call
+  - protocol_property_accessors_order
+  - raw_value_for_camel_cased_codable_enum
+  - reduce_boolean
   - reduce_into
+  - redundant_discardable_let
   - redundant_nil_coalescing
+  - redundant_objc_attribute
+  - redundant_optional_initialization
+  - redundant_set_access_control
+  - redundant_string_enum_value
   - redundant_type_annotation
+  - redundant_void_return
+  - required_enum_case
+  - return_arrow_whitespace
+  - shorthand_operator
   - single_test_class
   - sorted_first_last
   - sorted_imports
+  - statement_position
   - static_operator
+  - strong_iboutlet
+  - superfluous_disable_command
+  - switch_case_alignment
+  - syntactic_sugar
   - toggle_bool
+  - trailing_newline
+  - unneeded_break_in_switch
   - unneeded_parentheses_in_closure_argument
+  - unused_capture_list
+  - unused_closure_parameter
+  - unused_control_flow_label
   - unused_declaration
+  - unused_enumerated
   - unused_import
+  - unused_optional_binding
+  - unused_setter_value
+  - vertical_parameter_alignment
   - vertical_parameter_alignment_on_call
+  - vertical_whitespace
   - vertical_whitespace_closing_braces
+  - void_return
+  - weak_delegate
+  - xctfail_message
   
 # if {
 # }
@@ -79,3 +132,4 @@ opt_in_rules:
 # }
 statement_position:
   statement_mode: uncuddled_else
+  
