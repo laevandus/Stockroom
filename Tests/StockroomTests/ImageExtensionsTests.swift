@@ -5,8 +5,8 @@
 //  Created by Toomas Vahter on 19.08.2022.
 //
 
-@testable import Stockroom
 import ImageIO
+@testable import Stockroom
 import XCTest
 
 final class ImageExtensionsTests: XCTestCase {
