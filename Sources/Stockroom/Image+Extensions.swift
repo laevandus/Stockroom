@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 extension CGImagePropertyOrientation {
-    public init(_ uiOrientation: UIImage.Orientation) {
+    init(_ uiOrientation: UIImage.Orientation) {
         switch uiOrientation {
         case .up: self = .up
         case .upMirrored: self = .upMirrored
@@ -27,7 +27,7 @@ extension CGImagePropertyOrientation {
 }
 
 extension Image.Orientation {
-    public init(_ cgOrientation: CGImagePropertyOrientation) {
+    init(_ cgOrientation: CGImagePropertyOrientation) {
         switch cgOrientation {
         case .up: self = .up
         case .upMirrored: self = .upMirrored
@@ -40,7 +40,7 @@ extension Image.Orientation {
         }
     }
     
-    public init(_ uiOrientation: UIImage.Orientation) {
+    init(_ uiOrientation: UIImage.Orientation) {
         switch uiOrientation {
         case .up: self = .up
         case .upMirrored: self = .upMirrored

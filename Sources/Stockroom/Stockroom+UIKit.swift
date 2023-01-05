@@ -43,11 +43,20 @@ extension Stockroom {
     
     // MARK: -
     
+    /// Loads image asynchonously on disk.
+    /// - Parameters:
+    ///   - identifier: The identifier of the image.
+    ///   - targetPixelSize: The target size of the image.
     public func loadImage(for identifier: String, targetPixelSize: CGSize = .zero) async -> UIImage? {
         guard let cgImage = await loadCGImage(for: identifier, targetPixelSize: targetPixelSize) else { return nil }
         return UIImage(cgImage: cgImage, scale: 1, orientation: .up)
     }
     
+    /// Store data asynchronously on disk.
+    /// - Parameters:
+    ///   - image: UIImage to store.
+    ///   - identifier: The identifier of the image.
+    /// - Returns: An identifier used for storing the data.
     public func storeImage(_ image: UIImage, for identifier: String = UUID().uuidString) async throws -> String {
         try await store({
             guard let cgImage = image.cgImage else { return nil }
@@ -55,5 +64,4 @@ extension Stockroom {
         }, for: identifier)
     }
 }
-
 #endif
