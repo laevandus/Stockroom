@@ -7,6 +7,7 @@ let package = Package(
     name: "Stockroom",
     platforms: [
         .iOS(.v16),
+        .macOS(.v13),
     ],
     products: [
         .library(
